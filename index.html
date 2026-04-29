@@ -6,41 +6,93 @@
     <title>Deepesh Chhetri | AI Engineer & Student</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
+        
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.7;
             color: #2d3748;
-            max-width: 900px;
-            margin: 0 auto;
+            margin: 0;
             padding: 0;
             background-color: #f4f7f6;
         }
+        
         header {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #1f3b64 0%, #10213b 100%);
             color: #ffffff;
-            border-bottom: 5px solid #cbd5e0;
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .avatar {
+            width: 70px;
+            height: 70px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6em;
+            font-weight: 600;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.05);
+            letter-spacing: 1px;
         }
         header h1 {
-            margin: 0 0 10px 0;
+            margin: 0 0 25px 0;
             font-size: 2.8em;
             font-weight: 700;
             letter-spacing: 1px;
         }
-        header p {
-            font-size: 1.15em;
-            font-weight: 500;
-            margin: 0;
-            opacity: 0.95;
+        .header-summary {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            font-size: 1.05em;
+            font-weight: 400;
+            line-height: 1.8;
+            font-family: 'Inter', sans-serif;
+            padding: 0 20px;
         }
+        .header-summary p {
+            margin: 5px 0;
+        }
+        
+        /* Navigation Bar Styling */
+        .nav-bar {
+            background-color: #0c1627;
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            transition: color 0.3s ease;
+        }
+        .nav-bar a:hover {
+            color: #90cdf4;
+        }
+
         main {
             padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
         h2 {
             font-family: 'Montserrat', sans-serif;
-            color: #2a5298;
+            color: #1f3b64;
             font-size: 1.8em;
             font-weight: 600;
             margin-top: 0;
@@ -72,21 +124,21 @@
         p {
             margin-bottom: 15px;
         }
-        a {
-            color: #2a5298;
+        .main-link {
+            color: #1f3b64;
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease;
         }
-        a:hover {
-            color: #1e3c72;
+        .main-link:hover {
+            color: #10213b;
             text-decoration: underline;
         }
         .highlight {
             font-weight: 600;
             color: #2d3748;
         }
-        /* Ensuring no italics are used anywhere */
+        
         * {
             font-style: normal !important;
         }
@@ -95,19 +147,34 @@
 <body>
 
     <header>
+        <div class="avatar">DC</div>
         <h1>Deepesh Chhetri</h1>
-        <p>AI Engineer | MS Candidate at University at Buffalo | Analytics Professional</p>
+        
+        <div class="header-summary">
+            <p>AI Engineer and Analytics Professional experienced in creating reliable, data-driven solutions.</p>
+            <p>MS Artificial Intelligence Candidate — University at Buffalo</p>
+            <br>
+            <p>Captivated by the intersection of Artificial Intelligence, Mathematics, Technology, and Music.</p>
+        </div>
+
+        <nav class="nav-bar">
+            <a href="#profile">PROFILE</a>
+            <a href="#resume">RESUME</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#whatilike">WHAT I LIKE</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
     </header>
 
     <main>
-        <section>
+        <section id="profile">
             <h2>Professional Profile</h2>
             <div class="section-content">
                 <p>I am an AI Engineer and Analytics Professional who loves solving complex problems and building things that matter. With a background that spans both Software Engineering and Data Analytics, I enjoy creating reliable, data-driven solutions that help people and businesses succeed. I have spent quite sometime working with technical teams and business, which has taught me how to take complicated data and turn it into clear, straightforward insights that guide better decision-making. I am always eager to learn, adapt, and tackle the next big challenge.</p>
             </div>
         </section>
 
-        <section>
+        <section id="resume">
             <h2>Resume</h2>
             <div class="section-content">
                 <h3>Education</h3>
@@ -132,7 +199,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="portfolio">
             <h2>Portfolio</h2>
             <div class="section-content">
                 <p>My recent academic and personal projects:</p>
@@ -145,7 +212,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="whatilike">
             <h2>What I Like To Do</h2>
             <div class="section-content">
                 <p>I have always been fascinated by how things work at a fundamental level. My ultimate goal is to build a profound understanding of complex systems, much like my role model, Richard Feynman, who believed in breaking down the hardest concepts into simple, intuitive ideas. I want to understand the core logic behind the math, not just the steps to get answers.</p>
@@ -154,13 +221,13 @@
             </div>
         </section>
 
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
             <div class="section-content">
                 <p>Let's connect! I am always open to discussing AI, Analytics, Mathematics, and Music Technology.</p>
                 <ul>
-                    <li><span class="highlight">GitHub:</span> <a href="https://github.com/deepeshchhetri" target="_blank">github.com/deepeshchhetri</a></li>
-                    <li><span class="highlight">Email:</span> <a href="mailto:deepeshc@buffalo.edu">deepeshc@buffalo.edu</a></li>
+                    <li><span class="highlight">GitHub:</span> <a href="https://github.com/deepeshchhetri" target="_blank" class="main-link">github.com/deepeshchhetri</a></li>
+                    <li><span class="highlight">Email:</span> <a href="mailto:deepeshc@buffalo.edu" class="main-link">deepeshc@buffalo.edu</a></li>
                     <li><span class="highlight">Location:</span> Buffalo, New York, USA</li>
                 </ul>
             </div>
