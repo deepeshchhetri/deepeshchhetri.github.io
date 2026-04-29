@@ -16,11 +16,10 @@
             color: #2d3748;
             margin: 0;
             padding: 0;
-            /* Changed from original color to light blue */
-            background-color: #add8e6;
+            background-color: #f4f7f6;
         }
         
-        /* Redesigned Header Styling with image avatar */
+        /* New Header Styling based on reference framework */
         header {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
@@ -40,15 +39,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            /* Added to contain the image */
-            overflow: hidden;
-            /* background remains for overlay effect */
+            font-size: 1.6em;
+            font-weight: 600;
+            color: #ffffff;
             background: rgba(255, 255, 255, 0.05);
-        }
-        .avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures the headshot fills the circle perfectly */
+            letter-spacing: 1px;
         }
         header h1 {
             margin: 0 0 25px 0;
@@ -155,9 +150,7 @@
 <body>
 
     <header>
-        <div class="avatar">
-            <img src="image_2.png" alt="Deepesh Chhetri Avatar">
-        </div>
+        <div class="avatar">DC</div>
         <h1>Deepesh Chhetri</h1>
         
         <div class="header-summary">
