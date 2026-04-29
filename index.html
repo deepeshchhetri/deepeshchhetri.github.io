@@ -6,7 +6,7 @@
     <title>Deepesh Chhetri | AI Engineer & Student</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
-        
+        /* Smooth scrolling for the navigation links */
         html {
             scroll-behavior: smooth;
         }
@@ -16,9 +16,11 @@
             color: #2d3748;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
+            /* Changed from original color to light blue */
+            background-color: #add8e6;
         }
         
+        /* Redesigned Header Styling with image avatar */
         header {
             font-family: 'Montserrat', sans-serif;
             text-align: center;
@@ -38,11 +40,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.6em;
-            font-weight: 600;
-            color: #ffffff;
+            /* Added to contain the image */
+            overflow: hidden;
+            /* background remains for overlay effect */
             background: rgba(255, 255, 255, 0.05);
-            letter-spacing: 1px;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the headshot fills the circle perfectly */
         }
         header h1 {
             margin: 0 0 25px 0;
@@ -85,6 +91,7 @@
             color: #90cdf4;
         }
 
+        /* Main Content Styling */
         main {
             padding: 40px 20px;
             max-width: 900px;
@@ -139,6 +146,7 @@
             color: #2d3748;
         }
         
+        /* Ensuring no italics are used anywhere */
         * {
             font-style: normal !important;
         }
@@ -147,7 +155,9 @@
 <body>
 
     <header>
-        <div class="avatar">DC</div>
+        <div class="avatar">
+            <img src="image_2.png" alt="Deepesh Chhetri Avatar">
+        </div>
         <h1>Deepesh Chhetri</h1>
         
         <div class="header-summary">
