@@ -4,50 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepesh Chhetri | AI Engineer & Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            padding: 0;
+            background-color: #f4f7f6;
         }
         header {
             text-align: center;
-            padding: 40px 0;
-            border-bottom: 2px solid #0366d6;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            border-bottom: 5px solid #cbd5e0;
         }
-        h1 {
-            color: #24292e;
-            margin-bottom: 5px;
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.8em;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.15em;
+            font-weight: 300;
+            margin: 0;
+            opacity: 0.95;
+        }
+        main {
+            padding: 40px 20px;
         }
         h2 {
-            color: #0366d6;
-            margin-top: 30px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+            color: #2a5298;
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #1a202c;
+            font-size: 1.25em;
+            margin-top: 25px;
+            margin-bottom: 10px;
         }
         .section-content {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            margin-bottom: 40px;
         }
         ul {
             padding-left: 20px;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
         a {
-            color: #0366d6;
+            color: #2a5298;
             text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
         a:hover {
+            color: #1e3c72;
             text-decoration: underline;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #2d3748;
         }
     </style>
 </head>
@@ -58,61 +87,72 @@
         <p>AI Engineer | MS Candidate at University at Buffalo | Analytics Professional</p>
     </header>
 
-    <section>
-        <h2>Resume</h2>
-        <div class="section-content">
-            <h3>Education</h3>
-            <ul>
-                <li><strong>Master of Science in Engineering Science (Artificial Intelligence)</strong> - University at Buffalo (Current)</li>
-                <li><strong>Bachelor of Technology in Aeronautical Engineering</strong> - Dayananda Sagar College of Engineering</li>
-            </ul>
+    <main>
+        <section>
+            <h2>Professional Profile</h2>
+            <div class="section-content">
+                <p>I am a motivated AI Engineer and analytics professional with a strong foundation in computer science and applied data skills. With extensive experience bridging the gap between software engineering and data analytics, I specialize in building reliable, user-centered solutions that create measurable business impact. I excel at taking complex technical data and translating it into simple, actionable insights that help teams make better, faster decisions.</p>
+            </div>
+        </section>
 
-            <h3>Experience</h3>
-            <ul>
-                <li><strong>Analytics Engineer & Corporate Trainer</strong> - Indian Leadership Academy (Apr 2018 - Jul 2025): Built survey-to-dashboard workflows to enable near real-time program views and led sessions for diverse, international audiences.</li>
-                <li><strong>Software Engineer</strong> - Accenture (Oct 2015 - Mar 2018): Maintained business-critical applications, wrote root-cause guides, and introduced log-pattern tagging to improve resolution times.</li>
-            </ul>
+        <section>
+            <h2>Resume</h2>
+            <div class="section-content">
+                <h3>Education</h3>
+                <ul>
+                    <li><span class="highlight">Master of Science in Engineering Science (Artificial Intelligence)</span> - University at Buffalo (Current)</li>
+                    <li><span class="highlight">Bachelor of Technology in Aeronautical Engineering</span> - Dayananda Sagar College of Engineering</li>
+                </ul>
 
-            <h3>Technical Skills</h3>
-            <ul>
-                <li><strong>Programming:</strong> Python, SQL, C, Java, HTML/CSS</li>
-                <li><strong>Data & Tools:</strong> Data cleaning, validation, dashboarding, Git, NumPy, Pandas, PySpark, scikit-learn</li>
-            </ul>
-        </div>
-    </section>
+                <h3>Experience</h3>
+                <ul>
+                    <li><span class="highlight">Analytics Engineer & Corporate Trainer</span> - Indian Leadership Academy (2018 - 2025): 
+                        Transformed slow, manual data collection into automated, real-time visual dashboards. This saved the company days of manual effort and allowed leadership to review program success instantly. Additionally, I led engaging training sessions for global audiences, taking complex data sets and presenting them in simple, understandable ways for non-technical teams.</li>
+                    <li><span class="highlight">Software Engineer</span> - Accenture (2015 - 2018): 
+                        Maintained and protected highly important business applications to ensure they ran smoothly. I wrote clear, step-by-step troubleshooting guides that stopped recurring system crashes. I also created a smart tagging system for computer errors, which stopped the team from doing duplicate work and drastically sped up the time it took to fix system issues.</li>
+                </ul>
 
-    <section>
-        <h2>Portfolio</h2>
-        <div class="section-content">
-            <p>A selection of my recent academic and personal projects:</p>
-            <ul>
-                <li><strong>Spotify Mood Clustering:</strong> Analyzed 114,000 tracks using PySpark, applying KMeans clustering and the elbow method to group audio signatures.</li>
-                <li><strong>Digital Image Forensics:</strong> Developed a system utilizing metadata analysis and ORB feature matching to detect modified and degraded images.</li>
-                <li><strong>Chess Outcome Predictor:</strong> Built a logistic regression model to predict game outcomes based on board positions at move 20.</li>
-                <li><strong>Neural Network from Scratch:</strong> Engineered a two-layer feedforward neural network using raw NumPy to classify MNIST digits.</li>
-            </ul>
-        </div>
-    </section>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li><span class="highlight">Programming:</span> Python, SQL, C, Java, HTML/CSS</li>
+                    <li><span class="highlight">Data & Tools:</span> Data cleaning, validation, dashboarding, Git, NumPy, Pandas, PySpark, scikit-learn</li>
+                </ul>
+            </div>
+        </section>
 
-    <section>
-        <h2>What I Like To Do</h2>
-        <div class="section-content">
-            <p>I am deeply passionate about the intersection of mathematics and artificial intelligence. My goal is to build a profound, foundational understanding of complex systems—much like my role model, Richard Feynman, who believed in breaking down the complex into the beautifully simple.</p>
-            <p>Beyond traditional engineering, my interests span across Philosophy, Psychology, and Music. I love exploring how my technical AI expertise can bridge the gap with audio waveform analysis to create new STEM-focused innovations.</p>
-        </div>
-    </section>
+        <section>
+            <h2>Portfolio</h2>
+            <div class="section-content">
+                <p>A selection of my recent academic and personal projects:</p>
+                <ul>
+                    <li><span class="highlight">Spotify Mood Clustering:</span> Analyzed a massive dataset of 114,000 Spotify tracks using PySpark. I applied machine learning techniques—specifically KMeans clustering and the elbow method—to discover hidden patterns in the music. By looking at audio signatures like tempo, energy, and acousticness, the algorithm successfully grouped songs into distinct emotional moods and genres, revealing how human emotion maps to mathematical audio data.</li>
+                    <li><span class="highlight">Digital Image Forensics:</span> Developed a system utilizing metadata analysis and ORB feature matching to detect modified and degraded images.</li>
+                    <li><span class="highlight">Chess Outcome Predictor:</span> Built a logistic regression model to predict game outcomes based on board positions at move 20.</li>
+                    <li><span class="highlight">Neural Network from Scratch:</span> Engineered a two-layer feedforward neural network using raw NumPy to classify MNIST digits without relying on pre-built frameworks.</li>
+                </ul>
+            </div>
+        </section>
 
-    <section>
-        <h2>Contact</h2>
-        <div class="section-content">
-            <p>Let's connect! I am always open to discussing AI, analytics, mathematics, and music technology.</p>
-            <ul>
-                <li><strong>GitHub:</strong> <a href="https://github.com/deepeshchhetri" target="_blank">github.com/deepeshchhetri</a></li>
-                <li><strong>Email:</strong> <a href="mailto:deepeshc@buffalo.edu">deepeshc@buffalo.edu</a></li>
-                <li><strong>Location:</strong> Buffalo, New York, USA</li>
-            </ul>
-        </div>
-    </section>
+        <section>
+            <h2>What I Like To Do</h2>
+            <div class="section-content">
+                <p>I am deeply passionate about the elegant intersection of mathematics, artificial intelligence, and the human experience. My ultimate goal is to build a profound, foundational understanding of complex systems. Much like my role model, Richard Feynman, I believe that true mastery lies in the ability to break down the most complex, intimidating concepts into beautifully simple and intuitive ideas. I strive to learn not just how algorithms work, but <em>why</em> they work from the ground up.</p>
+                <p>Beyond traditional engineering, my curiosity extends into Philosophy, Psychology, and Music. I love exploring how technical AI models can bridge the gap with audio waveform analysis to create innovative, STEM-focused tools that push the boundaries of how we interact with sound and music.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <div class="section-content">
+                <p>Let's connect! I am always open to discussing AI, analytics, mathematics, and music technology.</p>
+                <ul>
+                    <li><span class="highlight">GitHub:</span> <a href="https://github.com/deepeshchhetri" target="_blank">github.com/deepeshchhetri</a></li>
+                    <li><span class="highlight">Email:</span> <a href="mailto:deepeshc@buffalo.edu">deepeshc@buffalo.edu</a></li>
+                    <li><span class="highlight">Location:</span> Buffalo, New York, USA</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
